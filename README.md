@@ -1,7 +1,7 @@
 # Better Workout for Amazon Alexa
 ## Nick Levitt
 
-This is a better workout application for the Amazon Alexa. It will build a random workout each time from a set of 18 different exercises.
+This is a better workout application for the Amazon Alexa. It will build a random workout each time from a set of 18 different exercises. I built this out of frustration when I could not find a workout application for Alexa that did not consist of the same workout every time. I wanted a workout application that introduced variety to each workout, so I built my own.
 
 ### Running Better Workout Locally
 
@@ -18,9 +18,6 @@ The bucket argument should be a directory in an Amazon S3 bucket which contains 
 The easiest method I have found for running this Application short of hosting it on AWS is through ngrok (see https://youtu.be/cXL8FDUag-s?t=83 for information on how to do this). Once ngrok is launched, it should look like this:
 
 ![ngrok Running](images/ngrok_run.png)
-
-
-The `intents.txt` and `utterance.txt` files in the repo can be copied and pasted into the developers console when setting up the app.
 
 ### Setting Up Better Workout
 
