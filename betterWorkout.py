@@ -144,21 +144,20 @@ def runExercise():
         session.attributes['exercise'] = exercise
         session.attributes['duration'] = duration
         # Coerce duration to an integer
-        dur = int(duration)
         # Get the associated clock for that duration
-        clock = args.bucket + clocks[dur]
+        clock = args.bucket + clocks[duration]
         # If the count is 0, this is the first exercise, send associated prompt.
         if cnt == 0:
-            msg = render_template('first_exercise', exercise=exercise, duration=dur, clock=clock, next=next_exercise)
+            msg = render_template('first_exercise', exercise=exercise, duration=duration, clock=clock, next=next_exercise)
             retell = render_template('retell')
 
         # If the next exercise is None, then this is the last exercise, send associated prompt
         elif not next_exercise:
-            return question(render_template('last_exercise', exercise=exercise, duration=dur, clock=clock))
+            return question(render_template('last_exercise', exercise=exercise, duration=duration, clock=clock))
 
         # Otherwise, prompt for the next exercise
         else:
-            msg = render_template('next_exercise', exercise=exercise, duration=dur, clock=clock, next=next_exercise)
+            msg = render_template('next_exercise', exercise=exercise, duration=duration, clock=clock, next=next_exercise)
             retell = render_template('retell')
 
         # Iterate the global count
