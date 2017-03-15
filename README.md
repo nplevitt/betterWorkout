@@ -7,7 +7,7 @@ This is a better workout application for the Amazon Alexa. It will build a rando
 
 You can launch Better Workout with the following command:
 
-		`python betterWorkout.py -bucket https://<your_s3_bucket_here>.amazonaws.com/clocks/ -clock_json clocks_dict.json`
+	`python betterWorkout.py -bucket https://<your_s3_bucket_here>.amazonaws.com/clocks/ -clock_json clocks_dict.json`
 
 It should look like this:
 ![Application Running](images/app_run.png)
