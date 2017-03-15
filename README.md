@@ -3,6 +3,8 @@
 
 This is a better workout application for the Amazon Alexa. It will build a random workout each time from a set of 18 different exercises. I built this out of frustration when I could not find a workout application for Alexa that did not consist of the same workout every time. I wanted a workout application that introduced variety to each workout, so I built my own.
 
+It is built on a Flask Ask Framework.
+
 ### Running Better Workout Locally
 
 You can launch Better Workout with the following command:
