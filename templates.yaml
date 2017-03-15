@@ -1,0 +1,32 @@
+start_message: Welcome to Better Workout. Try saying Start 5, 10, or 30 minute workout to begin, or say help for more info.
+
+more_info: Better Workout is a workout app designed to give you a unique workout every time. You can specify a workout of 5, 10, 15, 20 or 30 minutes. Brief instructions of each exercise will be shown on your Alexa app during the exercises. Try saying start 5 minute workout to begin. 
+
+misunderstood: Sorry I didn't get That. Say something like… start 5 minute workout to begin
+
+start_msg: Starting {{num_min}} minute workout. Say ready to begin
+
+first_exercise: |
+    <speak>
+        First up is {{exercise}} for {{duration}} Seconds. Get Ready. 3...2...1...
+        <audio src='{{clock}}'/>
+        Finished! Up next is {{next}}. Say Ready to start!
+    </speak>
+
+next_exercise: |
+    <speak>
+        Get ready for {{exercise}} for {{duration}} Seconds. Starting in 3...2...1...
+        <audio src='{{clock}}'/>
+        Finished! Up next is {{next}}. Say Ready to start!
+    </speak>
+
+last_exercise: |
+    <speak>
+        This is your last exercise! {{exercise}} for {{duration}} Seconds. Get Ready. 3...2...1...
+        <audio src='{{clock}}'/>
+        Way to go, you've completed your workout! You can start another workout now, or say finished to exit!
+    </speak>
+
+finished: Thanks for working out! Come back soon!
+
+retell: Say Ready to start your next exercise!
