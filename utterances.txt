@@ -1,0 +1,11 @@
+startIntent Start {num_min} Minute Workout
+startIntent Start Workout
+noIntent Do not start
+noIntent Go away
+runExercise Ready
+runExercise ready
+help help
+finished quit
+finished finished
+
+

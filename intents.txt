@@ -1,0 +1,31 @@
+{
+  "intents": [
+    {
+      "intent": "startIntent",
+      "slots": [
+        {
+          "name": "num_min",
+          "type": "LIST_OF_LENGTHS"
+        }
+      ]
+    },
+    {
+      "intent": "noIntent"
+    },
+    {
+      "intent": "runExercise"
+    },
+    {
+      "intent": "help"
+    },
+    {
+      "intent": "finished"
+    },
+    {
+      "intent": "AMAZON.PauseIntent"
+    },
+    {
+      "intent": "AMAZON.ResumeIntent"
+    }
+  ]
+}
